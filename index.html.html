@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beaver Dam Store | 1505 Richmond Rd B</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: #f8f8f8; color: #333; }
+
+header {
+background: url("https://lh3.googleusercontent.com/p/AF1QipO6vijtalCDOXc9uDv6oSAiG09Splk7OYmDBro4=s1360-w1360-h1020") no-repeat center center/cover;
+width: 100%;
+min-height: 100vh; /* Full screen height */
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: white;
+font-size: 2.5em;
+font-weight: 600;
+text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+padding: 20px;
+}
+
+nav { position: sticky; top: 0; background: #222; color: white; padding: 15px; text-align: center; z-index: 1000; }
+nav a { color: white; margin: 0 20px; font-size: 1.2em; text-decoration: none; cursor: pointer; transition: 0.3s; }
+nav a:hover { color: #f4a261; text-decoration: underline; }
+
+.container { max-width: 1100px; margin: auto; padding: 20px; }
+section { display: none; padding: 40px; text-align: center; background: white; border-radius: 12px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); margin-top: 20px; }
+section.active { display: block; }
+
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; justify-content: center; }
+.gallery img { width: 100%; height: auto; border-radius: 12px; transition: transform 0.3s; cursor: pointer; }
+.gallery img:hover { transform: scale(1.08); }
+
+.review { background: #f4f4f4; padding: 15px; margin: 10px 0; border-radius: 8px; font-style: italic; }
+
+.contact-info { margin-top: 20px; }
+.contact-info a { color: #f4a261; text-decoration: none; font-weight: bold; }
+
+footer { background: #222; color: white; text-align: center; padding: 20px; margin-top: 40px; font-size: 1em; }
+</style>
+</head>
+<body>
+<header>
+<h1>Welcome to Beaver Dam market</h1>
+<p>1505 Richmond Rd B, Troy, VA 22974</p>
+</header>
+
+<nav>
+<a onclick="showSection('about')">About</a>
+<a onclick="showSection('products')">Products</a>
+<a onclick="showSection('gallery')">Gallery</a>
+<a onclick="showSection('reviews')">Reviews</a>
+<a onclick="showSection('contact')">Contact</a>
+</nav>
+
+<div class="container">
+<section id="about" class="active">
+<h2>About Us</h2>
+<p>Your go-to store for beverages, snacks, and everyday essentials. Locally owned and serving the community since 2005!</p>
+</section>
+
+<section id="products">
+<h2>Our Products</h2>
+<p>We offer a wide range of convenience store essentials, including beer, snacks, soft drinks, and everyday household necessities.</p>
+</section>
+
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://drive.google.com/thumbnail?id=19w-a1mBA0BXRdX0lH1yszX0qLBP_deht&sz=w1000" alt="Store Image 1">
+<img src="https://drive.google.com/thumbnail?id=1L1neYVTWR3ssF_l8xUJoSD7QFA1CAZHX&sz=w1000" alt="Store Image 2">
+<img src="https://drive.google.com/thumbnail?id=1O4rBvTUa5tIiHGdP4McYQpQJdW0l7i6W&sz=w1000" alt="Store Image 3">
+<img src="https://drive.google.com/thumbnail?id=1WGAWUBEGf0E_QPATcNkXe0-GzGN19O09&sz=w1000" alt="Store Image 4">
+<img src="https://drive.google.com/thumbnail?id=1CHjf85wUXd39HmfCvFbPMa2pce4Ii-b4&sz=w1000" alt="Store Image 5">
+<img src="https://drive.google.com/thumbnail?id=1K5vTjHno1mziruEBakyszpNSm5IaQffi&sz=w1000" alt="Store Image 6">
+<img src="https://drive.google.com/thumbnail?id=1GybXqIgPvTZMzLz_vXr6L1Ugp9YooGzq&sz=w1000" alt="Thumbnail 1">
+<img src="https://drive.google.com/thumbnail?id=1DHyFH_4qqNEYDB5uCYyVAM4HP8ODjvKN&sz=w1000" alt="Thumbnail 2">
+<img src="https://drive.google.com/thumbnail?id=1o8FNNN3jBQWUvextXJpJMfhTLgM7DFcY&sz=w1000" alt="Thumbnail 3">
+<img src="https://drive.google.com/thumbnail?id=1e__AV_L2np8OP0o-CHDz2ua3UeDw-8iD&sz=w1000" alt="Thumbnail 4">
+<img src="https://drive.google.com/thumbnail?id=1J20M61DKLiXpTSqZqGN3NNxkABFhKX7m&sz=w1000" alt="Thumbnail 5">
+<img src="https://drive.google.com/thumbnail?id=1-cobmTKuCA5ujWaSzZgb_fUzY0RssNSX&sz=w1000" alt="Thumbnail 6">
+<img src="https://drive.google.com/thumbnail?id=1d-NRRLe-tdCk31OKF2kNuYNPGz-wEJ20&sz=w1000" alt="Thumbnail 7">
+</div>
+</section>
+
+<section id="reviews">
+<h2>Customer Reviews</h2>
+<div class="review">"Great selection and friendly staff!" - John D.</div>
+<div class="review">"Love shopping here, always find what I need." - Sarah L.</div>
+</section>
+
+<section id="contact">
+<h2>Contact Us</h2>
+<div class="contact-info">
+<p><strong>Phone:</strong> <a href="tel:4342951313">(434) 295-1313</a></p>
+<p><strong>Email:</strong> <a href="mailto:beaverdam1505@gmail.com">Beaverdam1505@gmail.com</a></p>
+<p><a href="https://www.google.com/maps?q=1505+Richmond+Rd+B+Troy+VA+22974" target="_blank">Find us on Google Maps</a></p>
+</div>
+</section>
+</div>
+
+<footer>
+&copy; 2025 Beaver Dam Store | All Rights Reserved
+</footer>
+
+<script>
+function showSection(sectionId) {
+document.querySelectorAll('section').forEach(section => {
+section.classList.remove('active');
+});
+document.getElementById(sectionId).classList.add('active');
+}
+</script>
+</body>
+</html>
